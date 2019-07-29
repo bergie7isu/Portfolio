@@ -1,58 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>The Portfolio of Mark Bergstrom - HTML Wireframe</title>
+        <title>The Portfolio of Mark Bergstrom</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is the coding portfolio of Mark Bergstrom. Please enjoy!">
+        <meta name="description" content="This is the coding portfolio of Mark Bergstrom. Enjoy!">
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,800|Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
+        <a class="pagejump" id="Top"></a>
         <nav>
             <div class="myname">Mark Bergstrom</div>
             <div class="mytitle">Full Stack Developer</div>
-            <ul>
-                <li>Bio</li>
-                <li>Portfolio</li>
-                <li>GitHub</li>
-                <li>Contact</li>
+            <ul class="hotlinks">
+                <li><a class="nav-anchor" title="Jump to Bio" href="#Bio">Bio</a></li>
+                <li><a class="nav-anchor" title="Jump to Portfolio" href="#Portfolio">Portfolio</a></li>
+                <li><a class="nav-anchor" title="Jump to Contact" href="#Contact">Contact</a></li>
+                <li><a class="nav-anchor" title="Jump to Top" href="#Top">Top</a></li>
             </ul>
         </nav>
         <main>
             <header>
-                <h1>Hero image and text</h1>
+                <h1>Hi, I’m Mark. Some people call me Bergie. I love solving problems, especially with code. I’m learning to become a full-stack developer.</h1>
             </header>
+            <div class="divider"></div>
+            <a class="pagejump" id="Bio"></a>
             <section class="bio">
                 <div class="heading"><h2>Bio</h2></div>
-                <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sequi tenetur recusandae natus, est autem iusto reiciendis iste ratione ea quis repellat quo voluptatibus, facere hic. Ut dolores tempore sunt.</p></div>
+                <div class="bio-content">
+                    <img class="bio-pic" src="images/bio-pic.jpg" alt="Thumbnail headshot of Mark Bergstrom.">
+                    <p>I’m a Mechanical Engineer who loves to code.  I’ve taught myself VBA throughout 
+                        my engineering career to drive accuracy, efficiency, and automation into repetitive design and 
+                        organizational tasks.  I’ve recently embarked on a journey to more formally learn to become a 
+                        full-stack developer in Bloc’s Web Developer Track Bootcamp.
+                    </p>
+                    <p>I love to take a problem, envision a solution, and then make that solution a reality.  Whether 
+                        it’s a physical, “hold-it-in-your-hand” mechanical solution or a virtual coding solution, the 
+                        process is the same.  The satisfaction from building something that works has always driven me 
+                        to take on bigger and more complicated problems.
+                    </p>
+                    <p>I’m passionate about details, relentlessly pursuing improvement, and striving to make an impact 
+                        in the world, in the community, and in the lives of my team members.  I seek teams that share 
+                        these passions.
+                    </p>
+                    <p>When I’m not coding, you can find me watching Netflix with my wife, stirring up trouble with 
+                        our three young sons, training for a marathon, flying a drone, or producing and editing 
+                        videos.
+                    </p>
+                </div>
             </section>
+            <div class="divider"></div>
+            <a class="pagejump" id="Portfolio"></a>
             <section class="portfolio">
                 <div class="heading"><h2>Portfolio</h2></div>
-                <div class="label">Portfolio Item 1</div>
-                <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur ratione, quos nam quo commodi vitae eius voluptate voluptatibus quidem quod cum? Eum debitis nemo, voluptas quas delectus fugit cumque!</p></div>
-                <div class="label">Portfolio Item 2</div>
-                <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur ratione, quos nam quo commodi vitae eius voluptate voluptatibus quidem quod cum? Eum debitis nemo, voluptas quas delectus fugit cumque!</p></div>
-                <div class="label">Portfolio Item 3</div>
-                <div class="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quidem quod incidunt beatae consequuntur provident, totam, id dolores inventore quos delectus a assumenda, natus veniam autem maxime iure iste nostrum.</p></div>
-                <div class="label">Portfolio Item 4</div>
-                <div class="content"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos facilis ab eligendi earum possimus est nam libero exercitationem neque minima accusantium veniam hic, illum voluptate, quam quae sequi. Fuga, nesciunt.</p></div>
-                <div class="label">Portfolio Item 5</div>
-                <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta id dolores labore delectus earum quo suscipit eum unde libero beatae, quidem explicabo voluptatem fuga distinctio dolorem in porro incidunt rem.</p></div>
-                <div class="label">Portfolio Item 6</div>
-                <div class="content"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur dolorem veritatis quis dolore numquam magni perferendis ad nulla consequatur assumenda distinctio aliquam fuga non quam, laboriosam deserunt dicta et? Debitis.</p></div>
+                <div class="content">
+                    <div class="label"><h3>The Ultimate Office Quiz App</h3></div>
+                    <div class="meat">
+                        <div class="text">
+                            <div class="icons">
+                                <img class="icon" src="images/HTML5.png" alt="Small HTML5 icon.">
+                                <img class="icon" src="images/CSS3.png" alt="Small CSS3 icon.">
+                                <img class="icon" src="images/JS.png" alt="Small JavaScript icon.">
+                                <img class="icon" src="images/jQuery.png" alt="Small jQuery icon.">
+                            </div>
+                            <h4>An entertaining interactive quiz app to test the user’s knowledge of The Office.</h4>
+                            <a href="https://bergie7isu.github.io/quiz-app-final/">Live App</a><br>
+                            <a href="https://github.com/bergie7isu/quiz-app-final">Repo</a>
+                        </div>
+                        <div class="screenshots">
+                            <img class="desktopSS" src="images/OfficeQuizAppScreenshot.JPG" alt="Screenshot example of the quiz app's desktop layout loading page.">
+                            <img class="desktopSS" src="images/OfficeQuizAppScreenshot2.JPG" alt="Screenshot example of the quiz app's desktop layout correct answer page.">
+                            <div class="mobilescreenshots">
+                                <img class="tabletSS" src="images/OfficeQuizAppScreenshot4.JPG" alt="Screenshot example of the quiz app's tablet layout incorrect answer page.">
+                                <img class="mobileSS" src="images/OfficeQuizAppScreenshot3.JPG" alt="Screenshot example of the quiz app's mobile layout question page.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-divider"></div>
+                <div class="content">
+                        <div class="label"><h3>Portfolio Item 2</h3></div>
+                        <div class="meat">
+                            <div class="text">
+                                <div class="icons">
+                                    
+                                </div>
+                                <h4>Portfolio Item 2</h4>
+                            </div>
+                            <div class="screenshots">
+                                
+                            </div>
+                        </div>
+                    </div>
+                <div class="portfolio-divider"></div>
+                <div class="content">
+                        <div class="label"><h3>Portfolio Item 3</h3></div>
+                        <div class="meat">
+                            <div class="text">
+                                <div class="icons">
+                                    
+                                </div>
+                                <h4>Portfolio Item 3</h4>
+                            </div>
+                            <div class="screenshots">
+                                
+                            </div>
+                        </div>
+                    </div>
+                <div class="portfolio-divider"></div>
+                <div class="content">
+                        <div class="label"><h3>Portfolio Item 4</h3></div>
+                        <div class="meat">
+                            <div class="text">
+                                <div class="icons">
+                                    
+                                </div>
+                                <h4>Portfolio Item 4</h4>
+                            </div>
+                            <div class="screenshots">
+                                
+                            </div>
+                        </div>
+                    </div>
+                <div class="portfolio-divider"></div>
+                <div class="content">
+                        <div class="label"><h3>Portfolio Item 5</h3></div>
+                        <div class="meat">
+                            <div class="text">
+                                <div class="icons">
+                                    
+                                </div>
+                                <h4>Portfolio Item 5</h4>
+                            </div>
+                            <div class="screenshots">
+                                
+                            </div>
+                        </div>
+                    </div>
+                <div class="portfolio-divider"></div>
+                <div class="content">
+                        <div class="label"><h3>Portfolio Item 6</h3></div>
+                        <div class="meat">
+                            <div class="text">
+                                <div class="icons">
+                                    
+                                </div>
+                                <h4>Portfolio Item 6</h4>
+                            </div>
+                            <div class="screenshots">
+                                
+                            </div>
+                        </div>
+                    </div>
             </section>
-            <section class="github">
-                <div class="heading"><h2>GitHub</h2></div>
-                <div class="content">GitHub logo and link</div>
-            </section>
+            <div class="divider"></div>
+            <a class="pagejump" id="Contact"></a>
             <section class="contact">
                 <div class="heading"><h2>Contact</h2></div>
-                <div class="content">Contact links</div>
+                <div class="content-contacts">
+                    <div class="contacts">
+                        <a class="contact-anchor" title="Email Bergie" href="mailto:markbergstrom@gmail.com" target="_blank"><img class="contact-icon" src="images/email-logo.png" alt="Email Logo."/></a>
+                        <a class="contact-anchor" title="View Bergie's LinkedIn Profile" href="https://www.linkedin.com/in/mark-bergstrom-a608ba59/" target="_blank"><img class="contact-icon" src="images/LinkedIn-logo-black.png" alt="LinkeIn Logo."/></a>
+                        <a class="contact-anchor" title="View Bergie's GifHub Profile" href="https://github.com/bergie7isu" target="_blank"><img class="contact-icon" src="images/GitHub-logo-black.png" alt="GitHub Logo."/></a>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
-            Footer
+            Thanks for browsing my portfolio. I'd love to hear from you!
         </footer>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <script src="index.js"></script>
     </body>
 </html>
