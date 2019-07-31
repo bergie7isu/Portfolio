@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html, body {
+	height: 100%;
+}
+
 nav {
     position: fixed;
     top: 0px;
@@ -19,10 +23,18 @@ nav {
     z-index: 500;
 }
 
+div.nameandtitle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .myname {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: bolder;
+    text-align: center;
 }
 
 .mytitle {
@@ -51,14 +63,14 @@ ul.hotlinks {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 108px;
 }
 
 header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 550px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/matrix-red.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,6 +84,24 @@ h1 {
     line-height: 34px;
     padding: 20px;
 }
+
+h6 {
+    color: #EBEBEB;
+    width: 40%;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hero-anchor {
+    text-align: center;
+}
+
+header img {
+    transform: rotate(180deg);
+}
+
+
 
 .bio-pic {
     width: 133px;
@@ -98,6 +128,10 @@ div.heading {
 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
+}
+
+div.bio-content {
+    background-color: #EBEBEB;
 }
 
 div.content {
@@ -150,10 +184,6 @@ div.text a:hover, a:hover {
     color: red;
     cursor: pointer;
     text-decoration: underline;
-}
-
-div.screenshots {
-    font-size: 16px;
 }
 
 .desktopSS {
@@ -227,4 +257,143 @@ div.contacts {
     display: block;
     position: relative;
     top: -108px;
+}
+
+@media screen and (min-width: 600px) {
+    .myname {
+        font-size: 50px;
+    }
+    
+    .mytitle {
+        font-size: 30px;
+    }
+    
+    .hotlinks li {
+        font-size: 16px;
+    }
+    
+    main {
+        margin-top: 135px;
+    }
+        
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+        padding: 40px;
+    }
+
+    .bio-pic {
+        width: 300px;
+        margin: 20px;
+    }
+    
+    p {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 20px;
+    }
+    
+    div.heading {
+        height: 100px;
+    }
+    
+    h2 {
+        font-size: 60px;
+    }
+    
+    div.content {
+        min-height: 300px;
+    }
+     
+    .icon {
+        height: 50px;
+        margin: 20px;
+    }
+        
+    h4 {
+        font-size: 28px;
+    }
+        
+    div.text a {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+        
+    div.divider {
+        height: 30px;
+    }
+    
+    div.portfolio-divider {
+        height: 20px;
+    }
+    
+    .contact-anchor {
+        width: 75px;
+        height: 75px;
+        margin: 30px;
+    }
+    
+    .pagejump {
+        top: -135px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    nav {
+        flex-direction: row;
+    }
+    
+    div.nameandtitle {
+        margin: 20px 40px;
+    }
+
+    .myname {
+        font-size: 60px;
+    }
+    
+    .mytitle {
+        font-size: 35px;
+    }
+    
+    ul.hotlinks {
+        width: 50%;
+        margin-right: 0;
+        justify-content: space-around;
+    }
+    
+    .hotlinks li {
+        font-size: 20px;
+    }
+        
+    main {
+        margin-top: 152px;
+    }
+        
+    h1 {
+        font-size: 60px;
+        line-height: 75px;
+        padding: 150px;
+    }
+    
+    section.bio, section.portfolio, section.contact {
+        display: flex;
+    }
+
+    div.heading {
+        height: auto;
+        max-width: 40%;
+        min-width: 40%; 
+    }
+    
+    div.content-contacts {
+        max-width: 60%;
+        min-width: 60%;
+    }
+
+    .pagejump {
+        top: -152px;
+    }
 }
