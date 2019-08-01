@@ -87,10 +87,10 @@ h1 {
 
 h6 {
     color: #EBEBEB;
-    width: 40%;
+    width: 35%;
     font-size: 14px;
     text-align: center;
-    margin-top: 60px;
+    padding-top: 60px;
 }
 
 .hero-anchor {
@@ -282,6 +282,12 @@ div.contacts {
         padding: 40px;
     }
 
+    h6 {
+        width: 30%;
+        font-size: 20px;
+        padding-top: 120px;
+    }
+
     .bio-pic {
         width: 300px;
         margin: 20px;
@@ -378,6 +384,11 @@ div.contacts {
         padding: 150px;
     }
     
+    h6 {
+        width: 20%;
+        font-size: 30px;
+    }
+
     section.bio, section.portfolio, section.contact {
         display: flex;
     }
