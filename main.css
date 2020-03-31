@@ -62,10 +62,6 @@ ul.hotlinks {
     text-decoration: none;
 }
 
-main {
-    margin-top: 108px;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -90,7 +86,7 @@ h6 {
     width: 35%;
     font-size: 14px;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .hero-anchor {
@@ -100,8 +96,6 @@ h6 {
 header img {
     transform: rotate(180deg);
 }
-
-
 
 .bio-pic {
     width: 133px;
@@ -123,6 +117,8 @@ div.heading {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    z-index: 1;
 }
 
 h2 {
@@ -146,8 +142,8 @@ div.label {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    align-self: stretch;
     width: 10%;
+    position: relative;
 }
 
 .icons {
@@ -218,6 +214,10 @@ h3 {
     text-align: center;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+    align-self: start;
+    position: sticky;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 footer {
@@ -256,7 +256,6 @@ div.contacts {
 .pagejump {
     display: block;
     position: relative;
-    top: -108px;
 }
 
 @media screen and (min-width: 600px) {
@@ -272,10 +271,6 @@ div.contacts {
         font-size: 16px;
     }
     
-    main {
-        margin-top: 135px;
-    }
-        
     h1 {
         font-size: 40px;
         line-height: 50px;
@@ -285,7 +280,7 @@ div.contacts {
     h6 {
         width: 30%;
         font-size: 20px;
-        padding-top: 120px;
+        padding-top: 20px;
     }
 
     .bio-pic {
@@ -341,10 +336,6 @@ div.contacts {
         height: 75px;
         margin: 30px;
     }
-    
-    .pagejump {
-        top: -135px;
-    }
 }
 
 @media screen and (min-width: 1350px) {
@@ -374,10 +365,6 @@ div.contacts {
         font-size: 20px;
     }
         
-    main {
-        margin-top: 152px;
-    }
-        
     h1 {
         font-size: 60px;
         line-height: 75px;
@@ -404,7 +391,18 @@ div.contacts {
         min-width: 60%;
     }
 
-    .pagejump {
-        top: -152px;
+    div.heading:not(.bio) {
+        align-items: flex-start;
     }
+
+    h2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: sticky;
+    }
+
+    h2.bio {
+        position: static;
+    }
+
 }
