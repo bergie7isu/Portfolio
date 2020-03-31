@@ -111,7 +111,7 @@ p {
 }
 
 div.heading {
-    background-color: #FE0000;
+    background-color: #CC0000;
     min-height: 0;
     height: 75px;
     display: flex;
@@ -256,6 +256,10 @@ div.contacts {
 .pagejump {
     display: block;
     position: relative;
+}
+
+.contact-email {
+    display: inline-block;
 }
 
 @media screen and (min-width: 600px) {
